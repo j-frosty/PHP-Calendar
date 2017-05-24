@@ -1,0 +1,278 @@
+body {
+    margin: 0 0;
+}
+
+
+div#calendar{
+   margin:0 auto;
+   margin-bottom: 10px;
+  padding:0px;
+  width: 882px;
+  font-family:Helvetica;
+
+}
+
+
+
+div#calendar div.box{
+    position:relative;
+    top:0px;
+    left:0px;
+    height:40px;
+
+}
+ 
+div#calendar div.header{
+    line-height:40px;  
+    vertical-align:middle;
+    position:absolute;
+    left:10px;
+    width:870px;
+    height:40px;   
+    text-align:center;
+
+
+}
+ 
+div#calendar div.header a.prev,div#calendar div.header a.next{ 
+    position:absolute;
+    top:0px;   
+    height: 17px;
+    display:block;
+    cursor:pointer;
+    text-decoration:none;
+    color:#000;
+
+}
+ 
+div#calendar div.header span.title{
+    color:#000;
+    font-size:18px;
+
+}
+ 
+ 
+div#calendar div.header a.prev{
+    left:0px;
+}
+ 
+div#calendar div.header a.next{
+    right:0px;
+}
+ 
+ 
+ 
+ 
+/*******************************Calendar Content Cells*********************************/
+div#calendar div.box-content{
+    border: 0px solid;
+    border-radius: 10px;
+    border-top:none;
+    background-color: #F0F0F0;
+}
+ 
+ 
+ 
+div#calendar ul.label{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+
+    margin-left: 5px;
+}
+ 
+div#calendar ul.label li{
+    margin:0px;
+    margin-top:5px;
+    padding:0px;
+    margin-right:5px;  
+
+    list-style-type:none;
+    width:120px;
+    height:72px;
+    line-height:40px;
+    vertical-align:middle;
+    text-align:center;
+    color:#000;
+    font-size: 15px;
+    background-color: transparent;
+    border:1px solid black;
+}
+ 
+ 
+div#calendar ul.dates{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+ .dates {width: 593px;
+     float: left;}
+/** overall width = width+padding-right**/
+div#calendar ul.dates li{
+    margin:0px;
+    padding:0px;
+    margin-right:5px;
+    margin-top: 5px;
+    
+    vertical-align:middle;
+    float:left;
+    list-style-type:none;
+    width: 585px;
+    height:72px;
+    font-size:62px;
+    background-color: #75FF75;
+    color:#000;
+    border:1px solid black;
+}
+.date{
+width:115px;
+    float:left;
+}
+div#calendar ul.dates li.today{
+
+}
+div#calendar ul.dates li .person{
+    width:150px;
+    font-size: 26px;
+    text-align: center;
+    float:right;
+
+
+}
+div#calendar ul.dates li #nurse{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 6px;
+    width:100px;
+    float:left;
+}
+
+div#calendar ul.dates li.booked{
+background-color:#99CCFF;
+}
+div#calendar ul.dates li.before{
+background-color:white;
+color:gray;
+}
+
+div#calendar ul.dates li.after{
+background-color:white;
+color:gray;
+
+}
+
+:focus{
+    outline:none;
+}
+ 
+div.clear{
+    clear:both;
+}
+div#calendar ul.dates li.maskbefore {
+    color: white;
+    background-color:white;
+
+}
+
+/*Navigation bar */
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    font-family: Capriola, Helvetica, sans-serif;
+}
+#cssmenu {
+    width: auto;
+    height: 59px;
+    padding-bottom: 4px;
+}
+#cssmenu.align-right {
+    float: right;
+}
+#cssmenu.align-right ul li {
+    float: right;
+    margin-right: 0;
+    margin-left: 4px;
+}
+#cssmenu.align-right ul li:first-child,
+#cssmenu.align-right ul li:first-child > a {
+    border-bottom-right-radius: 3px;
+}
+#cssmenu #bg-one,
+#cssmenu #bg-two,
+#cssmenu #bg-three,
+#cssmenu #bg-four {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+#cssmenu #bg-one {
+    height: 10px;
+    background: #0f71ba;
+}
+#cssmenu #bg-two {
+    height: 59px;
+    z-index: 2;
+    background: url('images/bg.png');
+}
+#cssmenu #bg-three {
+    bottom: 4px;
+    height: 55px;
+    z-index: 3;
+    background: #222222;
+    background: -moz-linear-gradient(top, #555555 0%, #222222 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555555), color-stop(100%, #222222));
+    background: -webkit-linear-gradient(top, #555555 0%, #222222 100%);
+    background: -o-linear-gradient(top, #555555 0%, #222222 100%);
+    background: -ms-linear-gradient(top, #555555 0%, #222222 100%);
+    background: linear-gradient(to bottom, #555555 0%, #222222 100%);
+}
+#cssmenu #bg-four {
+    bottom: 4px;
+    height: 55px;
+    z-index: 4;
+    background: url('images/bg.png');
+}
+#cssmenu ul {
+    height: 59px;
+}
+#cssmenu ul li {
+    float: left;
+    margin-right: 4px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    z-index: 5;
+}
+#cssmenu ul li a {
+    padding: 24px 30px 20px 30px;
+    margin-bottom: 4px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #eeeeee;
+    font-size: 15px;
+    text-decoration: none;
+}
+#cssmenu ul li:first-child,
+#cssmenu ul li:first-child > a {
+    border-bottom-left-radius: 3px;
+}
+#cssmenu ul li:hover,
+#cssmenu ul li.active {
+    background-color: #99CCFF;
+}
+#cssmenu ul li a:hover,
+#cssmenu ul li.active > a {
+    background: url('images/bg.png');
+    color: #ffffff;
+}
